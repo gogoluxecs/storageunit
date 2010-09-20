@@ -1,0 +1,271 @@
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.hibernate.controller.LinkController@642ddc4c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.hibernate.controller.LinkController.getLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Opening Hibernate Session
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12850157979
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+	at org.springframework.orm.hibernate3.SpringSessionContext.currentSession(SpringSessionContext.java:63)
+	at org.hibernate.impl.SessionFactoryImpl.getCurrentSession(SessionFactoryImpl.java:622)
+	at org.linkstorage.repository.HibernateLinkBase.getLink(HibernateLinkBase.java:25)
+	at org.linkstorage.hibernate.controller.LinkController.getLink(LinkController.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.doInvokeMethod(HandlerMethodInvoker.java:710)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:167)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:402)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:552)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.hibernate.controller.LinkController@642ddc4c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.hibernate.controller.LinkController.getLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Opening Hibernate Session
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12850158016
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+	at org.springframework.orm.hibernate3.SpringSessionContext.currentSession(SpringSessionContext.java:63)
+	at org.hibernate.impl.SessionFactoryImpl.getCurrentSession(SessionFactoryImpl.java:622)
+	at org.linkstorage.repository.HibernateLinkBase.getLink(HibernateLinkBase.java:25)
+	at org.linkstorage.hibernate.controller.LinkController.getLink(LinkController.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.doInvokeMethod(HandlerMethodInvoker.java:710)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:167)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:402)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:552)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.hibernate.controller.LinkController@642ddc4c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.hibernate.controller.LinkController.getLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Opening Hibernate Session
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12850158509
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+	at org.springframework.orm.hibernate3.SpringSessionContext.currentSession(SpringSessionContext.java:63)
+	at org.hibernate.impl.SessionFactoryImpl.getCurrentSession(SessionFactoryImpl.java:622)
+	at org.linkstorage.repository.HibernateLinkBase.getLink(HibernateLinkBase.java:25)
+	at org.linkstorage.hibernate.controller.LinkController.getLink(LinkController.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.doInvokeMethod(HandlerMethodInvoker.java:710)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:167)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:402)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:552)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.hibernate.controller.LinkController@642ddc4c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.hibernate.controller.LinkController.getLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Opening Hibernate Session
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12850158511
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+	at org.springframework.orm.hibernate3.SpringSessionContext.currentSession(SpringSessionContext.java:63)
+	at org.hibernate.impl.SessionFactoryImpl.getCurrentSession(SessionFactoryImpl.java:622)
+	at org.linkstorage.repository.HibernateLinkBase.getLink(HibernateLinkBase.java:25)
+	at org.linkstorage.hibernate.controller.LinkController.getLink(LinkController.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.doInvokeMethod(HandlerMethodInvoker.java:710)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:167)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:402)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:552)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.hibernate.controller.LinkController@642ddc4c'
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Looking for Converter to convert from TypeDescriptor java.lang.String to TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String
+DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@d38d2fc
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.hibernate.controller.LinkController.getLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Opening Hibernate Session
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12850158513
+DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.hibernate.controller.LinkController@642ddc4c]: org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.hibernate.HibernateException: No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here
+	at org.springframework.orm.hibernate3.SpringSessionContext.currentSession(SpringSessionContext.java:63)
+	at org.hibernate.impl.SessionFactoryImpl.getCurrentSession(SessionFactoryImpl.java:622)
+	at org.linkstorage.repository.HibernateLinkBase.getLink(HibernateLinkBase.java:25)
+	at org.linkstorage.hibernate.controller.LinkController.getLink(LinkController.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.doInvokeMethod(HandlerMethodInvoker.java:710)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:167)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:402)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:552)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:829)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:514)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'integration-servlet': startup date [Mon Sep 20 23:49:33 EEST 2010]; parent: Root WebApplicationContext
+DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3020463e: defining beans [linkController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@764d2b11
+DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)#6': [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0]
+DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+INFO Shutdown org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Mon Sep 20 23:49:32 EEST 2010]; root of context hierarchy
+DEBUG Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO Shutdown org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@764d2b11: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.links]; root of factory hierarchy
+DEBUG Shutdown org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'sessionFactory'
+INFO Shutdown org.springframework.orm.hibernate3.LocalSessionFactoryBean - Closing Hibernate SessionFactory
+INFO Shutdown org.hibernate.impl.SessionFactoryImpl - closing

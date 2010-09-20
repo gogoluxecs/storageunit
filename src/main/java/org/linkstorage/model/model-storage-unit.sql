@@ -1,0 +1,27 @@
+CREATE TABLE authors (
+  id INTEGER UNSIGNED NOT NULL,
+  nickname VARCHAR(255) NOT NULL,
+  channel VARCHAR(255) NOT NULL,
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+  PRIMARY KEY(id)
+)
+TYPE=InnoDB;
+
+CREATE TABLE links (
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  author_id INTEGER UNSIGNED NULL,
+  url VARCHAR(255) NOT NULL,
+  meta_description VARCHAR(255) NULL,
+  updated_at DATETIME NOT NULL,
+  created_at DATETIME NOT NULL,
+  PRIMARY KEY(id),
+  INDEX links_FKIndex1(author_id),
+  FOREIGN KEY(author_id)
+    REFERENCES authors(id)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+)
+TYPE=InnoDB;
+
+

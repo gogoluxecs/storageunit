@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="org.linkstorage.model.Link" table="links">
+    <id name="id" column="id">
+      <generator class="increment"/>
+    </id>
+
+    <property name="url" column="URL"/>
+    <property name="metaDescription" column="META_DESCRIPTION"/>
+  </class>
+</hibernate-mapping>
