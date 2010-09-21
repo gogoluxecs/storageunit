@@ -9,37 +9,39 @@
           <string>WEB-INF/jsp/links.jsp</string>
           <string>index.jsp</string>
           <string>WEB-INF/classes/hibernate.cfg.xml</string>
+          <string>WEB-INF/classes/org/linkstorage/controller/LinkController.class</string>
           <string>WEB-INF/classes/org/linkstorage/App.class</string>
           <string>WEB-INF/classes/org/linkstorage/repository/AuthorBase.class</string>
           <string>WEB-INF/classes/org/linkstorage/repository/LinkBase.class</string>
           <string>WEB-INF/classes/org/linkstorage/repository/HibernateAuthorBase.class</string>
           <string>WEB-INF/classes/org/linkstorage/repository/HibernateLinkBase.class</string>
-          <string>WEB-INF/classes/org/linkstorage/hibernate/controller/LinkController.class</string>
-          <string>WEB-INF/classes/org/linkstorage/hibernate/aspects/LoggingAspect.class</string>
           <string>WEB-INF/classes/org/linkstorage/model/Link.class</string>
           <string>WEB-INF/classes/org/linkstorage/model/Author.class</string>
+          <string>WEB-INF/classes/org/linkstorage/aspects/LoggingAspect.class</string>
           <string>WEB-INF/classes/org/linkstorage/HibernateUtils.class</string>
           <string>WEB-INF/classes/mappings/link.hbm.xml</string>
           <string>WEB-INF/classes/mappings/author.hbm.xml</string>
           <string>WEB-INF/classes/META-INF/spring/integration-data.xml</string>
           <string>WEB-INF/classes/META-INF/properties/database.properties</string>
           <string>WEB-INF/classes/META-INF/properties/log4j.properties</string>
-          <string>WEB-INF/lib/spring-context-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-beans-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-core-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-asm-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/commons-logging-1.1.jar</string>
-          <string>WEB-INF/lib/spring-expression-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-orm-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-jdbc-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-tx-3.0.0.RELEASE.jar</string>
+          <string>WEB-INF/classes/META-INF/aop-ajc.xml</string>
+          <string>WEB-INF/classes/builddef.lst</string>
+          <string>WEB-INF/lib/spring-context-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-aop-3.0.2.RELEASE.jar</string>
           <string>WEB-INF/lib/aopalliance-1.0.jar</string>
-          <string>WEB-INF/lib/spring-aop-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-oxm-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-web-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-webmvc-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-aspects-3.0.0.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-test-3.0.0.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-asm-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-beans-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-core-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/commons-logging-1.1.jar</string>
+          <string>WEB-INF/lib/spring-expression-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-orm-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-jdbc-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-tx-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-oxm-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-web-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-support-3.0.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-aspects-3.0.2.RELEASE.jar</string>
           <string>WEB-INF/lib/com.springsource.org.aspectj.runtime-1.6.6.RELEASE.jar</string>
           <string>WEB-INF/lib/com.springsource.org.hibernate-3.3.2.GA.jar</string>
           <string>WEB-INF/lib/hibernate-validator-4.0.2.GA.jar</string>

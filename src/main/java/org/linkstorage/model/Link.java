@@ -1,11 +1,20 @@
 package org.linkstorage.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="links")
 public class Link {
 	private Long id;
 	private String metaDescription;
 	private String url;
 
 	public Link() {}
+
+	public Link(long id, String url, String metaDescription) {
+		this.id = id;
+		this.url = url;
+		this.metaDescription = metaDescription;
+	}
 
 	/**
 	 * @return Long
