@@ -15,16 +15,48 @@
 	  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 
-	<!--support for @Controller mvc request mapping. also registers formatters and validators for use across @Controller-->
-	<mvc:annotation-driven/>
-
-	<!--select static view for rendering without going through @Controller-->
+	<!-- select static view for rendering without going through @Controller -->
 	<mvc:view-controller path="/index" view-name="index"/>
 
-	<!--inside controllers you don't need to worry about where your jsp is located-->
-	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-	  <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-	  <property name="prefix" value="/WEB-INF/jsp/"/>
-	  <property name="suffix" value=".jsp"/>
+	<!--
+		support for @Controller mvc request mapping.
+		also registers formatters and validators for use across @Controller
+	-->
+	<mvc:annotation-driven/>
+
+	<!-- To enable @RequestMapping process on type level and method level -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+
+	<bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+		<property name="classesToBeBound">
+			<list>
+				<value>org.linkstorage.model.Link</value>
+			</list>
+		</property>
 	</bean>
+
+	<bean id="links" class="org.springframework.web.servlet.view.xml.MarshallingView">
+		<constructor-arg ref="jaxbMarshaller" />
+	</bean>
+
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+		    <map>
+		        <entry key="xml" value="application/xml"/>
+		        <entry key="html" value="text/html"/>
+		    </map>
+		</property>
+		<property name="viewResolvers">
+		    <list>
+		        <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+		        <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+					<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+					<property name="prefix" value="/WEB-INF/jsp/"/>
+					<property name="suffix" value=".jsp"/>
+				</bean>
+		    </list>
+		</property>
+	</bean>
+
 </beans>

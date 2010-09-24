@@ -25,7 +25,7 @@ public class LinkController {
 	@RequestMapping(method=RequestMethod.GET, value="/link/{id}")
 	public ModelAndView getLink(@PathVariable String id) {
 		Link link = linksRepository.getLink(Long.parseLong(id));
-	    ModelAndView modelAndView = new ModelAndView("links");
+	    ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
 	    modelAndView.addObject("link", link);
 	    return modelAndView;
 	}

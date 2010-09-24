@@ -1,6 +1,0 @@
-<aspectj>
-<aspects>
-<aspect name="org.linkstorage.aspects.LoggingAspect"/>
-</aspects>
-</aspectj>
-
