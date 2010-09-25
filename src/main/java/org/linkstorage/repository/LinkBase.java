@@ -5,7 +5,23 @@ import org.linkstorage.model.Link;
 import java.util.List;
 
 public interface LinkBase {
-	public Link getLink(Long id);
+
+	/**
+	 *
+	 * @param id
+	 * @return
+	 */
+	public Link getLink(Integer id);
+
+	/**
+	 *
+	 * @return
+	 */
 	public List getLinks();
+
+	/**
+	 *
+	 * @param link
+	 */
 	public void addLink(Link link);
 }

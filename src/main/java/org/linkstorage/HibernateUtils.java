@@ -30,8 +30,8 @@ public class HibernateUtils {
   public static void main(String[] args) {
     Session session = getSessionFactory().getCurrentSession();
     session.getTransaction().begin();
-    Link link = (Link) session.get(Link.class, new Long(1));
-    System.out.println("user's email id is: "+ link.getUrl());
+    Link link = (Link) session.get(Link.class, new Integer(1));
+    System.out.println("the url is: "+ link.getUrl());
     session.getTransaction().commit();
   }
 }

@@ -30,6 +30,7 @@
     </property>
     <property name="mappingResources">
       <list>
+      	<value>mappings/author.hbm.xml</value>
         <value>mappings/link.hbm.xml</value>
       </list>
     </property>
@@ -49,8 +50,6 @@
   </bean>
 
   <!--repository init area-->
-
   <bean id="repository.links" class="org.linkstorage.repository.HibernateLinkBase"
         autowire="constructor"/>
-
 </beans>
