@@ -28,8 +28,8 @@ public class HibernateLinkBase implements LinkBase {
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional
-	public List getLinks() {
-	  return sessionFactory.getCurrentSession().createQuery("from Link l").list();
+	public List<Link> getLinks() {
+	  return (List<Link>) sessionFactory.getCurrentSession().createQuery("from Link l").list();
 	}
 
 	@Override
