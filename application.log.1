@@ -1,3 +1,369 @@
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@32c5f9fe]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3ae86a5f]
+DEBUG main org.springframework.ui.context.support.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@5f47ff11]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@21c3dc66: defining beans [loggingAspect,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.config.internalTransactionAspect,sessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,repository.links]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'loggingAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'loggingAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'loggingAspect' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'loggingAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAspect' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.config.internalTransactionAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAspect'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+INFO main org.hibernate.cfg.Environment - Hibernate 3.3.2.GA
+INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+INFO main org.hibernate.cfg.HbmBinder - Mapping class: org.linkstorage.model.Author -> authors
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: nickname -> nickname
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: channel -> channel
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: createdAt -> created_at
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: updatedAt -> updated_at
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: links
+DEBUG main org.hibernate.util.DTDEntityResolver - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+DEBUG main org.hibernate.util.DTDEntityResolver - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+DEBUG main org.hibernate.util.DTDEntityResolver - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+INFO main org.hibernate.cfg.HbmBinder - Mapping class: org.linkstorage.model.Link -> links
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: id -> id
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: author -> author_id
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: url -> url
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: metaDescription -> meta_description
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: updatedAt -> updated_at
+DEBUG main org.hibernate.cfg.HbmBinder - Mapped property: createdAt -> created_at
+DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: org.linkstorage.model.Author.links
+INFO main org.hibernate.cfg.HbmBinder - Mapping collection: org.linkstorage.model.Author.links -> links
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: author_id, one-to-many: org.linkstorage.model.Link
+DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - processing association property references
+DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: org.linkstorage.model.Author
+INFO main org.springframework.orm.hibernate3.LocalSessionFactoryBean - Building new Hibernate SessionFactory
+DEBUG main org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - processing association property references
+DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+DEBUG main org.hibernate.cfg.Configuration - resolving reference to class: org.linkstorage.model.Author
+INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.1.41-3ubuntu12.6
+INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.12 ( Revision: ${bzr.revision-id} )
+INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64, java.vm.version=17.0-b16, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit, java.runtime.version=1.6.0_21-b06, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=/home/georgi/opt/jdk1.6.0_21/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, webapp.root=/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/src/main/webapp/, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., os.name=Linux, classworlds.conf=/usr/share/maven2/bin/m2.conf, sun.jnu.encoding=UTF-8, java.library.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64/server:/home/georgi/opt/jdk1.6.0_21/jre/lib/amd64:/home/georgi/opt/jdk1.6.0_21/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot 64-Bit Server Compiler, hibernate.transaction.factory_class=org.springframework.orm.hibernate3.SpringTransactionFactory, os.version=2.6.32-24-generic, user.home=/home/georgi, user.timezone=Europe/Sofia, java.awt.printerjob=sun.print.PSPrinterJob, java.specification.version=1.6, file.encoding=UTF-8, show_sql=true, user.name=georgi, java.class.path=/usr/share/maven2/boot/classworlds.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.0, sun.arch.data.model=64, java.home=/home/georgi/opt/jdk1.6.0_21/jre, java.specification.vendor=Sun Microsystems Inc., user.language=en, java.vm.info=mixed mode, java.version=1.6.0_21, java.ext.dirs=/home/georgi/opt/jdk1.6.0_21/jre/lib/ext:/usr/java/packages/lib/ext, securerandom.source=file:/dev/./urandom, sun.boot.class.path=/home/georgi/opt/jdk1.6.0_21/jre/lib/resources.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/rt.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/sunrsasign.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/jsse.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/jce.jar:/home/georgi/opt/jdk1.6.0_21/jre/lib/charsets.jar:/home/georgi/opt/jdk1.6.0_21/jre/classes, java.vendor=Sun Microsystems Inc., maven.home=/usr/share/maven2, file.separator=/, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=, dialect=org.hibernate.dialect.MySQL5Dialect}
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: org.linkstorage.model.Link
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from spring3_linkstorage_unit.links where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select link_.id, link_.author_id as author2_1_, link_.url as url1_, link_.meta_description as meta4_1_, link_.updated_at as updated5_1_, link_.created_at as created6_1_ from spring3_linkstorage_unit.links link_ where link_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into spring3_linkstorage_unit.links (author_id, url, meta_description, updated_at, created_at, id) values (?, ?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update spring3_linkstorage_unit.links set author_id=?, url=?, meta_description=?, updated_at=?, created_at=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from spring3_linkstorage_unit.links where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into spring3_linkstorage_unit.links (author_id, url, meta_description, updated_at, created_at) values (?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: org.linkstorage.model.Author
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from spring3_linkstorage_unit.authors where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select author_.id, author_.nickname as nickname0_, author_.channel as channel0_, author_.created_at as created4_0_, author_.updated_at as updated5_0_ from spring3_linkstorage_unit.authors author_ where author_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into spring3_linkstorage_unit.authors (nickname, channel, created_at, updated_at, id) values (?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update spring3_linkstorage_unit.authors set nickname=?, channel=?, created_at=?, updated_at=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from spring3_linkstorage_unit.authors where id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: org.linkstorage.model.Author.links
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update spring3_linkstorage_unit.links set author_id=? where id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update spring3_linkstorage_unit.links set author_id=null where author_id=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update spring3_linkstorage_unit.links set author_id=null where author_id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity org.linkstorage.model.Link: select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity org.linkstorage.model.Author: select author0_.id as id0_0_, author0_.nickname as nickname0_0_, author0_.channel as channel0_0_, author0_.created_at as created4_0_0_, author0_.updated_at as updated5_0_0_ from spring3_linkstorage_unit.authors author0_ where author0_.id=?
+DEBUG main org.hibernate.loader.collection.OneToManyLoader - Static select for one-to-many org.linkstorage.model.Author.links: select links0_.author_id as author2_1_, links0_.id as id1_, links0_.id as id1_0_, links0_.author_id as author2_1_0_, links0_.url as url1_0_, links0_.meta_description as meta4_1_0_, links0_.updated_at as updated5_1_0_, links0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links links0_ where links0_.author_id=?
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - registered: ff8081812b54ce24012b54ce25330000 (unnamed)
+INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiated session factory
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+INFO main org.springframework.orm.hibernate3.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@248523a0] of Hibernate SessionFactory for HibernateTransactionManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'repository.links'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'repository.links'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'repository.links' via constructor to bean named 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'repository.links' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'repository.links'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@3c10b841]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1077 ms
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Initializing servlet 'integration'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'integration': initialization started
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Servlet with name 'integration' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Mon Sep 27 23:06:56 EEST 2010]; root of context hierarchy]
+INFO main org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'integration-servlet': startup date [Mon Sep 27 23:06:57 EEST 2010]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/integration-mvc.xml]
+DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller] for files matching pattern [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:org/linkstorage/controller/**/*.class] to resources [file [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller/LinkController.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller/LinkController.class]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.BeanNameViewResolver#53606bf5]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'linkController': replacing [Generic bean: class [org.linkstorage.controller.LinkController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/home/georgi/dev/project/org/local/java/storageunit/src/spring3-storage-unit/target/classes/org/linkstorage/controller/LinkController.class]] with [Generic bean: class [org.linkstorage.controller.LinkController]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/spring/integration-mvc.xml]]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 18 bean definitions from location pattern [/WEB-INF/spring/integration-mvc.xml]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Bean factory for WebApplicationContext for namespace 'integration-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@5f4fcc96: defining beans [linkController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1,jaxbMarshaller,links,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@21c3dc66
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@40f186b8]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@30c3bb57]
+DEBUG main org.springframework.ui.context.support.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@24065c4]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5f4fcc96: defining beans [linkController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.config.viewControllerHandlerAdapter,org.springframework.web.servlet.config.viewControllerHandlerMapping,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1,jaxbMarshaller,links,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@21c3dc66
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'linkController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'linkController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'repository.links'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'linkController' via constructor to bean named 'repository.links'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'linkController' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jaxbMarshaller'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'jaxbMarshaller'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'jaxbMarshaller' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'jaxbMarshaller'
+INFO main org.springframework.oxm.jaxb.Jaxb2Marshaller - Creating JAXBContext with classes to be bound [class org.linkstorage.bean.LinkBean]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'jaxbMarshaller'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'linkController'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerAdapter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#1'
+DEBUG main org.springframework.beans.BeanUtils - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/index] onto handler [org.springframework.web.servlet.mvc.ParameterizableViewController@441743be]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Looking for URL mappings in application context: WebApplicationContext for namespace 'integration-servlet': startup date [Mon Sep 27 23:06:57 EEST 2010]; parent: Root WebApplicationContext
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerAdapter': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerMapping': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'jaxbMarshaller': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'links': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'servletConfig': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+DEBUG main org.hibernate.validator.engine.ResourceBundleMessageInterpolator - ValidationMessages not found. Delegating to org.hibernate.validator.ValidationMessages
+DEBUG main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.PersistenceUtil on classpath. All properties will per default be traversable.
+DEBUG main org.hibernate.validator.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#2'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#2'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#3'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#3'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#4'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#4'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#5'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#5'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#6'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#6'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#7'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)#8'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)#8'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Looking for URL mappings in application context: WebApplicationContext for namespace 'integration-servlet': startup date [Mon Sep 27 23:06:57 EEST 2010]; parent: Root WebApplicationContext
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/{id}/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/links/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link.*] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'linkController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/integration/link/] onto handler [org.linkstorage.controller.LinkController@879f5eb]
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerAdapter': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.config.viewControllerHandlerMapping': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0': no URL paths identified
+DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
 DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
 DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1': no URL paths identified
 DEBUG main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1': no URL paths identified
@@ -12,12 +378,7 @@ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory 
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1' to allow for resolving potential circular references
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#1'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jaxbMarshaller'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'jaxbMarshaller'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'jaxbMarshaller' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'jaxbMarshaller'
-INFO main org.springframework.oxm.jaxb.Jaxb2Marshaller - Creating JAXBContext with classes to be bound [class org.linkstorage.bean.LinkBean]
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'jaxbMarshaller'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'jaxbMarshaller'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'links'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'links'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'jaxbMarshaller'
@@ -26,20 +387,20 @@ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory 
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0' to allow for resolving potential circular references
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#12d0430'
-DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#12d0430'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#53606bf5'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.BeanNameViewResolver#53606bf5'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'viewResolver'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'viewResolver'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
-DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1e481c1]
+DEBUG main org.springframework.web.context.support.XmlWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7dabdb8a]
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
 DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
-DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1ed56e2]
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@62b21d14]
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
-DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@1d8643e]
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@20724356]
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.viewControllerHandlerMapping'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#1'
@@ -55,659 +416,148 @@ DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory 
 DEBUG main org.springframework.web.servlet.DispatcherServlet - No HandlerExceptionResolvers found in servlet 'integration': using default
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
-DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@16d3d51]
+DEBUG main org.springframework.web.servlet.DispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@236c6da9]
 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
 DEBUG main org.springframework.web.servlet.DispatcherServlet - Published WebApplicationContext of servlet 'integration' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.integration]
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'integration': initialization completed in 1042 ms
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'integration': initialization completed in 683 ms
 DEBUG main org.springframework.web.servlet.DispatcherServlet - Servlet 'integration' configured successfully
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
-DEBUG btpool0-0 org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'getLinks' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing POST request for [/spring3-storage-unit/integration/link]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link] to handler 'org.linkstorage.controller.LinkController@879f5eb'
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Reading [java.lang.String] as "application/xml" using [org.springframework.http.converter.StringHttpMessageConverter@281827c9]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.addLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: org.springframework.oxm.UnmarshallingFailureException: JAXB unmarshalling exception; nested exception is javax.xml.bind.UnmarshalException: unexpected element (uri:"", local:"links"). Expected elements are <{}link>,<{}response>
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: org.springframework.oxm.UnmarshallingFailureException: JAXB unmarshalling exception; nested exception is javax.xml.bind.UnmarshalException: unexpected element (uri:"", local:"links"). Expected elements are <{}link>,<{}response>
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: org.springframework.oxm.UnmarshallingFailureException: JAXB unmarshalling exception; nested exception is javax.xml.bind.UnmarshalException: unexpected element (uri:"", local:"links"). Expected elements are <{}link>,<{}response>
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.springframework.oxm.UnmarshallingFailureException: JAXB unmarshalling exception; nested exception is javax.xml.bind.UnmarshalException: unexpected element (uri:"", local:"links"). Expected elements are <{}link>,<{}response>
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.convertJaxbException(Jaxb2Marshaller.java:667)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:588)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:571)
+	at org.linkstorage.controller.LinkController.addLink(LinkController.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:174)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:421)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:409)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+Caused by: javax.xml.bind.UnmarshalException: unexpected element (uri:"", local:"links"). Expected elements are <{}link>,<{}response>
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.handleEvent(UnmarshallingContext.java:556)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:199)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportError(Loader.java:194)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.Loader.reportUnexpectedChildElement(Loader.java:71)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext$DefaultRootLoader.childElement(UnmarshallingContext.java:962)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:399)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:380)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:101)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:501)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:626)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3103)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:922)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:648)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:195)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:168)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:137)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:105)
+	at org.springframework.oxm.jaxb.Jaxb2Marshaller.unmarshal(Jaxb2Marshaller.java:584)
+	... 32 more
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing POST request for [/spring3-storage-unit/integration/link]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link] to handler 'org.linkstorage.controller.LinkController@879f5eb'
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Reading [java.lang.String] as "application/xml" using [org.springframework.http.converter.StringHttpMessageConverter@281827c9]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.addLink(java.lang.String)
+DEBUG btpool0-0 org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'addLink' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973269
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@1c27402] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@1c27402]
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.addLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12856180631
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@4162b8ce] for Hibernate transaction
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@4162b8ce]
 DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
 DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
 DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
 DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
 DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.hql.ast.QueryTranslatorImpl - parse() - HQL: from org.linkstorage.model.Link l
-DEBUG btpool0-0 org.hibernate.hql.ast.AST - --- HQL AST ---
- \-[QUERY] 'query'
-    \-[SELECT_FROM] 'SELECT_FROM'
-       \-[FROM] 'from'
-          \-[RANGE] 'RANGE'
-             +-[DOT] '.'
-             |  +-[DOT] '.'
-             |  |  +-[DOT] '.'
-             |  |  |  +-[IDENT] 'org'
-             |  |  |  \-[IDENT] 'linkstorage'
-             |  |  \-[IDENT] 'model'
-             |  \-[IDENT] 'Link'
-             \-[ALIAS] 'l'
-
-DEBUG btpool0-0 org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
-DEBUG btpool0-0 org.hibernate.hql.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
-DEBUG btpool0-0 org.hibernate.hql.ast.tree.FromElement - FromClause{level=1} :  org.linkstorage.model.Link (l) -> link0_
-DEBUG btpool0-0 org.hibernate.hql.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
-DEBUG btpool0-0 org.hibernate.hql.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} spring3_linkstorage_unit.links link0_ ) )
-DEBUG btpool0-0 org.hibernate.hql.ast.HqlSqlWalker - Derived SELECT clause created.
-DEBUG btpool0-0 org.hibernate.hql.ast.util.JoinProcessor - Using FROM fragment [spring3_linkstorage_unit.links link0_]
-DEBUG btpool0-0 org.hibernate.hql.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
-DEBUG btpool0-0 org.hibernate.hql.ast.AST - --- SQL AST ---
- \-[SELECT] QueryNode: 'SELECT'  querySpaces (spring3_linkstorage_unit.links)
-    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
-    |  +-[SELECT_EXPR] SelectExpressionImpl: 'link0_.id as id1_'
-    |  \-[SQL_TOKEN] SqlFragment: 'link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_'
-    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[l], fromElementByTableAlias=[link0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
-       \-[FROM_FRAGMENT] FromElement: 'spring3_linkstorage_unit.links link0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=l,role=null,tableName=spring3_linkstorage_unit.links,tableAlias=link0_,origin=null,colums={,className=org.linkstorage.model.Link}}
-
-DEBUG btpool0-0 org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
-DEBUG btpool0-0 org.hibernate.hql.ast.QueryTranslatorImpl - HQL: from org.linkstorage.model.Link l
-DEBUG btpool0-0 org.hibernate.hql.ast.QueryTranslatorImpl - SQL: select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.hql.ast.ErrorCounter - throwQueryException() : no errors
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@1c27402]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction rollback
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Rolling back Hibernate transaction on Session [org.hibernate.impl.SessionImpl@4162b8ce]
+DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - rollback
 DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
+DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - rolled back JDBC Connection
 DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@1c27402] after transaction
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@4162b8ce] after transaction
 DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
 DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
 DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: java.lang.RuntimeException: Transaction Unsuccessful. not-null property references a null or transient value: org.linkstorage.model.Link.updatedAt
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: java.lang.RuntimeException: Transaction Unsuccessful. not-null property references a null or transient value: org.linkstorage.model.Link.updatedAt
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [org.linkstorage.controller.LinkController@879f5eb]: java.lang.RuntimeException: Transaction Unsuccessful. not-null property references a null or transient value: org.linkstorage.model.Link.updatedAt
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+java.lang.RuntimeException: Transaction Unsuccessful. not-null property references a null or transient value: org.linkstorage.model.Link.updatedAt
+	at org.linkstorage.aspects.LoggingAspect.adderOrGetterThrewException(LoggingAspect.java:35)
+	at org.linkstorage.repository.HibernateLinkBase.addLink(HibernateLinkBase.java:38)
+	at org.linkstorage.controller.LinkController.addLink(LinkController.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:174)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:421)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:409)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:771)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:843)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:488)
+DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing POST request for [/spring3-storage-unit/integration/link]
+DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link] to handler 'org.linkstorage.controller.LinkController@879f5eb'
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Reading [java.lang.String] as "application/xml" using [org.springframework.http.converter.StringHttpMessageConverter@281827c9]
+DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.addLink(java.lang.String)
 DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973285
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@6be4cc] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@6be4cc]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@6be4cc]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@6be4cc] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973294
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@115a298] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@115a298]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@115a298]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@115a298] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973297
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@18b62e0] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@18b62e0]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@18b62e0]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@18b62e0] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973297
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@39a867] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@39a867]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@39a867]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@39a867] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/links] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/links] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/links]
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLinks()
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLinks]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973344
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@6287d3] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@6287d3]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_, link0_.author_id as author2_1_, link0_.url as url1_, link0_.meta_description as meta4_1_, link0_.updated_at as updated5_1_, link0_.created_at as created6_1_ from spring3_linkstorage_unit.links link0_
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@6287d3]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@6287d3] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/2]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/2] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/2] are {id=2}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/2] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/2] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/2]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'getLink' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973453
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@124e205] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@124e205]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@124e205]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@124e205] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/2]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/2] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/2] are {id=2}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/2] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/2] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/2]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973468
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@206be6] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@206be6]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#2]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@206be6]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-27 11:28:48, id=2, author=null, createdAt=2010-09-27 11:28:48, metaDescription=Google, url=http://www.google.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@206be6] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/1] are {id=1}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973508
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@b7ad3] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@b7ad3]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@b7ad3]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@b7ad3] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/1] are {id=1}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973516
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@3b0b1e] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@3b0b1e]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@3b0b1e]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@3b0b1e] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/1] are {id=1}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973518
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@13fc437] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@13fc437]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@13fc437]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@13fc437] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/1] are {id=1}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Converting value of [TypeDescriptor java.lang.String] to [TypeDescriptor @org.springframework.web.bind.annotation.PathVariable java.lang.String]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
-DEBUG btpool0-0 org.springframework.web.bind.annotation.support.HandlerMethodInvoker - Invoking request handler method: public org.springframework.web.servlet.ModelAndView org.linkstorage.controller.LinkController.getLink(java.lang.String)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.getLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-DEBUG btpool0-0 org.hibernate.impl.SessionImpl - opened session at timestamp: 12855973520
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@1533b2c] for Hibernate transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@1533b2c]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - begin
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - opening JDBC connection
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - current autocommit status: true
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - disabling autocommit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring3_linkstorage_unit, UserName=root@localhost, MySQL-AB JDBC Driver]
-DEBUG btpool0-0 org.hibernate.loader.Loader - loading entity: [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.SQL - select link0_.id as id1_0_, link0_.author_id as author2_1_0_, link0_.url as url1_0_, link0_.meta_description as meta4_1_0_, link0_.updated_at as updated5_1_0_, link0_.created_at as created6_1_0_ from spring3_linkstorage_unit.links link0_ where link0_.id=?
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
-DEBUG btpool0-0 org.hibernate.loader.Loader - result row: EntityKey[org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - resolving associations for [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.TwoPhaseLoad - done materializing entity [org.linkstorage.model.Link#1]
-DEBUG btpool0-0 org.hibernate.engine.StatefulPersistenceContext - initializing non-lazy collections
-DEBUG btpool0-0 org.hibernate.loader.Loader - done entity load
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@1533b2c]
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - commit
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-DEBUG btpool0-0 org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-DEBUG btpool0-0 org.hibernate.pretty.Printer - listing entities:
-DEBUG btpool0-0 org.hibernate.pretty.Printer - org.linkstorage.model.Link{updatedAt=2010-09-24 11:28:48, id=1, author=null, createdAt=2010-09-24 11:28:51, metaDescription=ir.bg - Българският Интернет портал, url=http://www.dir.bg}
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
-DEBUG btpool0-0 org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@1533b2c] after transaction
-DEBUG btpool0-0 org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
-DEBUG btpool0-0 org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Requested media types are [application/xml, application/xhtml+xml, image/png, text/html;q=0.9, text/plain;q=0.8, */*;q=0.5] (based on Accept header)
-DEBUG btpool0-0 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'links'
-DEBUG btpool0-0 org.springframework.web.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] based on requested media type 'application/xml'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.xml.MarshallingView: name 'links'] in DispatcherServlet with name 'integration'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' determining Last-Modified value for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Matching patterns for request [/integration/link/1] are [/integration/link/{id}]
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - URI Template variables for request [/integration/link/1] are {id=1}
-DEBUG btpool0-0 org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapping [/integration/link/1] to handler 'org.linkstorage.controller.LinkController@5a02ef'
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/spring3-storage-unit/integration/link/1] is: -1
-DEBUG btpool0-0 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'integration' processing GET request for [/spring3-storage-unit/integration/link/1]
-DEBUG btpool0-0 org.springframework.core.convert.support.GenericConversionService - Conditional converter lookup [MATCHED] org.springframework.core.convert.support.ObjectToStringConverter@ad4264
+DEBUG btpool0-0 org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [org.linkstorage.repository.HibernateLinkBase.addLink]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''

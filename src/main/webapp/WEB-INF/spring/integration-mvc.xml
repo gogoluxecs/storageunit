@@ -59,4 +59,8 @@
 		</property>
 	</bean>
 
+	<bean id="linkController" class="org.linkstorage.controller.LinkController">
+		<property name="jaxb2Marshaller" ref="jaxbMarshaller" />
+	</bean>
+
 </beans>

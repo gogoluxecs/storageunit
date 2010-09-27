@@ -11,7 +11,7 @@ import org.linkstorage.model.Link;
 public class LinkBean {
 
 	private Link link;
-	private List<Link> links;	
+	private List<Link> links;
 	private int count;
 
 	public LinkBean() {}
@@ -19,7 +19,7 @@ public class LinkBean {
 	public LinkBean(Link link) {
 		this.link = link;
 	}
-	
+
 	public LinkBean(List<Link> links) {
 		this.links = links;
 		this.count = links.size();
@@ -33,7 +33,7 @@ public class LinkBean {
 	public int getCount() {
 		return count;
 	}
-	
+
 	@XmlElement(name="link")
 	public List<Link> getLinks() {
 		return links;

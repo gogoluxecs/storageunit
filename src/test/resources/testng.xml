@@ -5,6 +5,8 @@
   <!--base defaults which i'll be passing to my test methods-->
   <parameter name="url" value="dir.bg"/>
   <parameter name="metaDescription" value="description"/>
+  <parameter name="createdAt" value="2010-09-27 09:33:00"/>
+  <parameter name="updatedAt" value="2010-09-27 09:33:01"/>
 
   <!--view names that return from LinkController methods-->
   <parameter name="getLink" value="links"/>
