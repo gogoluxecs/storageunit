@@ -45,12 +45,12 @@ public class LinkController {
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	public ModelAndView getLink(@PathVariable String id) {
 		Link link = linksRepository.getLink(Integer.parseInt(id));
-	    //ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
-	    //modelAndView.addObject("link", link);
-	    //return modelAndView;
-
 		LinkBean linkbean = new LinkBean(link);
-		return new ModelAndView(XML_VIEW_NAME, "object", linkbean);
+		
+		ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
+	    modelAndView.addObject("link", linkbean);
+	    
+	    return modelAndView;
 	}
 
 	/**
@@ -61,9 +61,7 @@ public class LinkController {
 	public ModelAndView getLinks() {
 		List<Link> links = linksRepository.getLinks();
 		LinkList linksList = new LinkList(links);
+		
 		return new ModelAndView(XML_VIEW_NAME, "links", linksList);
-		//ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
-		//modelAndView.addObject("links", links);
-		//return modelAndView;
 	}
 }

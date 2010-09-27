@@ -13,7 +13,12 @@
 <body>
 	<div>
 		<ul>
-			<c:forEach var="link" items="${links}">
+			<c:if test="${empty links.links}">
+				<li>Link url: ${link.link.url}</li>
+				<li>Meta description: ${link.link.metaDescription}</li>			
+			</c:if>
+			
+			<c:forEach var="link" items="${links.links}">
 				<li>Link url: ${link.url}</li>
 				<li>Meta description: ${link.metaDescription}</li>
 			</c:forEach>
