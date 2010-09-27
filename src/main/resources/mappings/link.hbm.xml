@@ -1,15 +1,27 @@
 <?xml version="1.0"?>
-<!DOCTYPE hibernate-mapping PUBLIC
-"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-
+<!-- Generated Sep 25, 2010 8:24:27 AM by Hibernate Tools 3.3.0.GA -->
 <hibernate-mapping>
-  <class name="org.linkstorage.model.Link" table="links">
-    <id name="id" column="id">
-      <generator class="increment"/>
-    </id>
-
-    <property name="url" column="URL"/>
-    <property name="metaDescription" column="META_DESCRIPTION"/>
-  </class>
+    <class name="org.linkstorage.model.Link" table="links" catalog="spring3_linkstorage_unit">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="author" class="org.linkstorage.model.Author" fetch="select">
+            <column name="author_id" />
+        </many-to-one>
+        <property name="url" type="string">
+            <column name="url" not-null="true" />
+        </property>
+        <property name="metaDescription" type="string">
+            <column name="meta_description" />
+        </property>
+        <property name="updatedAt" type="timestamp">
+            <column name="updated_at" length="19" not-null="true" />
+        </property>
+        <property name="createdAt" type="timestamp">
+            <column name="created_at" length="19" not-null="true" />
+        </property>
+    </class>
 </hibernate-mapping>

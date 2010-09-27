@@ -1,14 +1,30 @@
 <?xml version="1.0"?>
-<!DOCTYPE hibernate-mapping PUBLIC
-"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-
+<!-- Generated Sep 25, 2010 8:24:27 AM by Hibernate Tools 3.3.0.GA -->
 <hibernate-mapping>
-  <class name="org.linkstorage.model.Author" table="author">
-    <id name="id" column="id">
-      <generator class="increment"/>
-    </id>
-    <property name="nickname" column="NICKNAME"/>
-    <property name="channel" column="CHANNEL"/>
-  </class>
+    <class name="org.linkstorage.model.Author" table="authors" catalog="spring3_linkstorage_unit">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="nickname" type="string">
+            <column name="nickname" not-null="true" />
+        </property>
+        <property name="channel" type="string">
+            <column name="channel" not-null="true" />
+        </property>
+        <property name="createdAt" type="timestamp">
+            <column name="created_at" length="19" not-null="true" />
+        </property>
+        <property name="updatedAt" type="timestamp">
+            <column name="updated_at" length="19" not-null="true" />
+        </property>
+        <set name="links" table="links" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="author_id" />
+            </key>
+            <one-to-many class="org.linkstorage.model.Link" />
+        </set>
+    </class>
 </hibernate-mapping>

@@ -6,14 +6,17 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Title of the document</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>List of the links</title>
 </head>
 
 <body>
 	<div>
 		<ul>
-			<li>Link url: ${link.url}</li>
-			<li>Meta description: ${link.metaDescription}</li>
+			<c:forEach var="link" items="${links}">
+				<li>Link url: ${link.url}</li>
+				<li>Meta description: ${link.metaDescription}</li>
+			</c:forEach>
 		</ul>
 	</div>
 </body>

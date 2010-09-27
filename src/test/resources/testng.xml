@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="1" name="LinkStorageIntegration-suite"
+	annotations="JDK" parallel="methods">
+
+  <!--base defaults which i'll be passing to my test methods-->
+  <parameter name="url" value="dir.bg"/>
+  <parameter name="metaDescription" value="description"/>
+
+  <!--view names that return from LinkController methods-->
+  <parameter name="getLink" value="links"/>
+
+  <test name="integration-tests">
+    <packages>
+      <package name="org.linkstorage.model"/>
+      <package name="org.linkstorage.repository"/>
+      <package name="org.linkstorage.controller"/>
+    </packages>
+  </test>
+
+</suite>

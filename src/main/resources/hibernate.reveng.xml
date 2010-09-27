@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+
+
+
+	<table-filter match-name=".*"></table-filter>
+	<table catalog="spring3_linkstorage_unit" name="links" class="Link">
+		<column name="id"></column>
+		<column name="author_id"></column>
+		<column name="url"></column>
+		<column name="meta_description"></column>
+		<column name="updated_at"></column>
+		<column name="created_at"></column>
+	</table>
+	<table catalog="spring3_linkstorage_unit" name="authors" class="Author">
+		<column name="id"></column>
+		<column name="nickname"></column>
+		<column name="channel"></column>
+		<column name="created_at"></column>
+		<column name="updated_at"></column>
+	</table>
+</hibernate-reverse-engineering>

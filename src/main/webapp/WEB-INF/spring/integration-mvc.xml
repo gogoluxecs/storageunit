@@ -31,7 +31,8 @@
 	<bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
 		<property name="classesToBeBound">
 			<list>
-				<value>org.linkstorage.model.Link</value>
+				<value>org.linkstorage.bean.LinkBean</value>
+				<value>org.linkstorage.bean.LinkList</value>
 			</list>
 		</property>
 	</bean>
