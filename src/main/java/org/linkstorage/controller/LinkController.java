@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import org.linkstorage.bean.LinkBean;
-import org.linkstorage.bean.LinkList;
 import org.linkstorage.model.Link;
 import org.linkstorage.repository.LinkBase;
 
@@ -18,19 +17,16 @@ import org.linkstorage.repository.LinkBase;
 @RequestMapping("/integration/*")
 public class LinkController {
 
-	/**
-	 *
-	 */
 	private LinkBase linksRepository;
 
 	/**
-	 *
+	 * Name of the jsp view template
 	 */
 	private static final String XML_VIEW_NAME = "links";
 
 	/**
 	 *
-	 * @param linksRepository
+	 * @param LinkBase linksRepository
 	 */
 	@Autowired
 	public LinkController(LinkBase linksRepository) {
@@ -39,8 +35,8 @@ public class LinkController {
 
 	/**
 	 *
-	 * @param id
-	 * @return
+	 * @param String id
+	 * @return ModelAndView
 	 */
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	public ModelAndView getLink(@PathVariable String id) {
@@ -55,12 +51,12 @@ public class LinkController {
 
 	/**
 	 *
-	 * @return
+	 * @return ModelAndView
 	 */
 	@RequestMapping(method=RequestMethod.GET, value="links")
 	public ModelAndView getLinks() {
 		List<Link> links = linksRepository.getLinks();
-		LinkList linksList = new LinkList(links);
+		LinkBean linksList = new LinkBean(links);
 		
 		return new ModelAndView(XML_VIEW_NAME, "links", linksList);
 	}

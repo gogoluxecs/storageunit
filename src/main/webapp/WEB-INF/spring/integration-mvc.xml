@@ -32,7 +32,6 @@
 		<property name="classesToBeBound">
 			<list>
 				<value>org.linkstorage.bean.LinkBean</value>
-				<value>org.linkstorage.bean.LinkList</value>
 			</list>
 		</property>
 	</bean>
