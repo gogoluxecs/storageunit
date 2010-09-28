@@ -31,9 +31,8 @@ public class LinkBaseTest extends AbstractTransactionalTestNGSpringContextTests{
 		link.setUrl(url);
 		link.setMetaDescription(metaDescription);
 
-		//TODO convert String to Date object with Spring
-		link.setCreatedAt(new Date(1258466400));
-		link.setUpdatedAt(new Date(1258466400));
+		link.setCreatedAt(new Date());
+		link.setUpdatedAt(new Date());
 
 		this.link = link;
 	}

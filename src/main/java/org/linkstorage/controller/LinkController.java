@@ -1,7 +1,8 @@
 package org.linkstorage.controller;
 
+import java.io.IOException;
 import java.io.StringReader;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import javax.xml.transform.Source;
@@ -81,17 +82,17 @@ public class LinkController {
 	 *
 	 * @param body
 	 * @return
+	 * @throws IOException
 	 */
 	@RequestMapping(method=RequestMethod.POST, value="/link")
-	public ModelAndView addLink(@RequestBody String body) {
+	public ModelAndView addLink(@RequestBody String body) throws IOException {
 		Source source = new StreamSource(new StringReader(body));
 		Link link = (Link) jaxb2Marshaller.unmarshal(source);
-		
-		//TODO convert String date to Date date
-		link.setUpdatedAt(new Date(1258466400));
-		link.setCreatedAt(new Date(1258466400));
+
+		link.setUpdatedAt(new Date());
+		link.setCreatedAt(new Date());
 		linksRepository.addLink(link);
-		
+
 		LinkBean linkbean = new LinkBean(link);
 
 		ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
