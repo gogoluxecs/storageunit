@@ -1,22 +1,27 @@
 package org.linkstorage.controller;
 
-import java.io.IOException;
 import java.io.StringReader;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.linkstorage.bean.ErrorBean;
 import org.linkstorage.bean.LinkBean;
 import org.linkstorage.model.Link;
 import org.linkstorage.repository.LinkBase;
@@ -33,6 +38,8 @@ public class LinkController {
 	 * Name of the jsp view template
 	 */
 	private static final String XML_VIEW_NAME = "links";
+
+	protected final Log logger = LogFactory.getLog(getClass());
 
 	/**
 	 *
@@ -54,6 +61,7 @@ public class LinkController {
 	 * @return ModelAndView
 	 */
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
+	@ResponseStatus(value=HttpStatus.OK)
 	public ModelAndView getLink(@PathVariable String id) {
 		Link link = linksRepository.getLink(Integer.parseInt(id));
 		LinkBean linkbean = new LinkBean(link);
@@ -69,7 +77,9 @@ public class LinkController {
 	 *
 	 * @return ModelAndView
 	 */
+	//TODO create offset and limit in the query
 	@RequestMapping(method=RequestMethod.GET, value="links")
+	@ResponseStatus(value=HttpStatus.OK)
 	public ModelAndView getLinks() {
 		List<Link> links = linksRepository.getLinks();
 		LinkBean linksList = new LinkBean(links);
@@ -82,21 +92,35 @@ public class LinkController {
 	 *
 	 * @param body
 	 * @return
-	 * @throws IOException
 	 */
+	//TODO Refactor controller logic
 	@RequestMapping(method=RequestMethod.POST, value="/link")
-	public ModelAndView addLink(@RequestBody String body) throws IOException {
+	public ModelAndView addLink(@RequestBody String body, HttpServletResponse response) {
 		Source source = new StreamSource(new StringReader(body));
 		Link link = (Link) jaxb2Marshaller.unmarshal(source);
 
-		link.setUpdatedAt(new Date());
-		link.setCreatedAt(new Date());
-		linksRepository.addLink(link);
+		ModelAndView modelAndView = new ModelAndView();
 
-		LinkBean linkbean = new LinkBean(link);
+		//TODO refactor error
+		if(link.getId() != null || link.getCreatedAt() != null || link.getUpdatedAt() != null) {
+			ErrorBean errorBean = new ErrorBean("Error sending parameters");
+			modelAndView.setViewName("errors");
+			modelAndView.addObject("error", errorBean);
 
-		ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
-		modelAndView.addObject("link", linkbean);
+			response.setStatus(500);
+		}
+		else {
+			link.setUpdatedAt(new Date());
+			link.setCreatedAt(new Date());
+
+			linksRepository.addLink(link);
+			LinkBean linkbean = new LinkBean(link);
+
+			modelAndView.setViewName(XML_VIEW_NAME);
+			modelAndView.addObject("link", linkbean);
+
+			response.setStatus(200);
+		}
 
 		return modelAndView;
 	}
