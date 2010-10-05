@@ -24,6 +24,7 @@ import org.apache.commons.logging.LogFactory;
 import org.linkstorage.bean.ErrorBean;
 import org.linkstorage.bean.LinkBean;
 import org.linkstorage.model.Link;
+import org.linkstorage.model.LinkValidator;
 import org.linkstorage.repository.LinkBase;
 
 @Controller
@@ -60,15 +61,35 @@ public class LinkController {
 	 * @param String id
 	 * @return ModelAndView
 	 */
+	//TODO refactor
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	@ResponseStatus(value=HttpStatus.OK)
-	public ModelAndView getLink(@PathVariable String id){
-		
-		Link link = linksRepository.getLink(Integer.parseInt(id));
-		LinkBean linkbean = new LinkBean(link);
+	public ModelAndView getLink(@PathVariable String id, HttpServletResponse response){
+		ModelAndView modelAndView = new ModelAndView();
 
-		ModelAndView modelAndView = new ModelAndView(XML_VIEW_NAME);
-	    modelAndView.addObject("link", linkbean);
+		LinkValidator linkValidator = new LinkValidator();
+		if(linkValidator.validate(id)) {
+
+			ErrorBean errorBean = new ErrorBean("Error sending parameters");
+			modelAndView.setViewName("errors");
+			modelAndView.addObject("error", errorBean);
+
+			response.setStatus(500);
+
+		} else {
+			Link link = linksRepository.getLink(Integer.parseInt(id));
+
+			if(link.getId() > 0) {
+				LinkBean linkbean = new LinkBean(link);
+
+				modelAndView.setViewName(XML_VIEW_NAME);
+			    modelAndView.addObject("link", linkbean);
+			} else {
+				ErrorBean errorBean = new ErrorBean("Error sending parameters");
+				modelAndView.setViewName("errors");
+				modelAndView.addObject("error", errorBean);
+			}
+		}
 
 	    return modelAndView;
 	}
