@@ -62,7 +62,8 @@ public class LinkController {
 	 */
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	@ResponseStatus(value=HttpStatus.OK)
-	public ModelAndView getLink(@PathVariable String id) {
+	public ModelAndView getLink(@PathVariable String id){
+		
 		Link link = linksRepository.getLink(Integer.parseInt(id));
 		LinkBean linkbean = new LinkBean(link);
 
