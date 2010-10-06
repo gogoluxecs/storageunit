@@ -62,7 +62,6 @@ public class LinkController {
 	 * @param String id
 	 * @return ModelAndView
 	 */
-	//TODO refactor
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	@ResponseStatus(value=HttpStatus.OK)
 	public ModelAndView getLink(@PathVariable String id){
