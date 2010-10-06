@@ -4,7 +4,7 @@ import java.io.StringReader;
 import java.util.Date;
 import java.util.List;
 
-import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 
@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.DataBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +23,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.linkstorage.bean.ErrorBean;
 import org.linkstorage.bean.LinkBean;
 import org.linkstorage.model.Link;
 import org.linkstorage.model.LinkValidator;
@@ -64,34 +65,18 @@ public class LinkController {
 	//TODO refactor
 	@RequestMapping(method=RequestMethod.GET, value="link/{id}")
 	@ResponseStatus(value=HttpStatus.OK)
-	public ModelAndView getLink(@PathVariable String id, HttpServletResponse response){
+	public ModelAndView getLink(@PathVariable String id){
 		ModelAndView modelAndView = new ModelAndView();
 
-		LinkValidator linkValidator = new LinkValidator();
-		if(linkValidator.validate(id)) {
+		Link link = linksRepository.getLink(Integer.parseInt(id));
+		if(link != null) {
+			LinkBean linkbean = new LinkBean(link);
 
-			ErrorBean errorBean = new ErrorBean("Error sending parameters");
-			modelAndView.setViewName("errors");
-			modelAndView.addObject("error", errorBean);
-
-			response.setStatus(500);
-
-		} else {
-			Link link = linksRepository.getLink(Integer.parseInt(id));
-
-			if(link.getId() > 0) {
-				LinkBean linkbean = new LinkBean(link);
-
-				modelAndView.setViewName(XML_VIEW_NAME);
-			    modelAndView.addObject("link", linkbean);
-			} else {
-				ErrorBean errorBean = new ErrorBean("Error sending parameters");
-				modelAndView.setViewName("errors");
-				modelAndView.addObject("error", errorBean);
-			}
+			modelAndView.setViewName(XML_VIEW_NAME);
+		    modelAndView.addObject("link", linkbean);
 		}
 
-	    return modelAndView;
+		return modelAndView;
 	}
 
 	/**
@@ -115,35 +100,46 @@ public class LinkController {
 	 * @param body
 	 * @return
 	 */
-	//TODO Refactor controller logic
 	@RequestMapping(method=RequestMethod.POST, value="/link")
-	public ModelAndView addLink(@RequestBody String body, HttpServletResponse response) {
+	public ModelAndView addLink(@RequestBody String body) {
 		Source source = new StreamSource(new StringReader(body));
 		Link link = (Link) jaxb2Marshaller.unmarshal(source);
 
 		ModelAndView modelAndView = new ModelAndView();
 
-		//TODO refactor error
-		if(link.getId() != null || link.getCreatedAt() != null || link.getUpdatedAt() != null) {
-			ErrorBean errorBean = new ErrorBean("Error sending parameters");
-			modelAndView.setViewName("errors");
-			modelAndView.addObject("error", errorBean);
+		DataBinder binder = new DataBinder(link);
+		binder.setValidator(new LinkValidator());
+		binder.validate();
+		BindingResult results = binder.getBindingResult();
 
-			response.setStatus(500);
-		}
-		else {
+		if(processAddLink(link, results) == true) {
 			link.setUpdatedAt(new Date());
 			link.setCreatedAt(new Date());
 
 			linksRepository.addLink(link);
+
 			LinkBean linkbean = new LinkBean(link);
 
 			modelAndView.setViewName(XML_VIEW_NAME);
 			modelAndView.addObject("link", linkbean);
-
-			response.setStatus(200);
+		} else {
+			//TODO replace error404 with error response
+			/*
+				ErrorBean errorBean = new ErrorBean("Error sending parameters");
+				modelAndView.setViewName(XML_VIEW_ERROR);
+				modelAndView.addObject("error", errorBean);
+			*/
 		}
 
 		return modelAndView;
+	}
+
+	private boolean processAddLink(@Valid Link link, BindingResult result) {
+
+		if (result.hasErrors()) {
+			return false;
+		}
+
+		return true;
 	}
 }
