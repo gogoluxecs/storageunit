@@ -4,7 +4,6 @@ import java.io.StringReader;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.Valid;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 
@@ -111,7 +110,7 @@ public class LinkController {
 		binder.validate();
 		BindingResult results = binder.getBindingResult();
 
-		if(processAddLink(link, results) == true) {
+		if(results.hasErrors() == false) {
 			link.setUpdatedAt(new Date());
 			link.setCreatedAt(new Date());
 
@@ -131,14 +130,5 @@ public class LinkController {
 		}
 
 		return modelAndView;
-	}
-
-	private boolean processAddLink(@Valid Link link, BindingResult result) {
-
-		if (result.hasErrors()) {
-			return false;
-		}
-
-		return true;
 	}
 }
