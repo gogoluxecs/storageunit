@@ -4,9 +4,6 @@ import org.linkstorage.model.Link;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name="links")
 public interface LinkBase {
 
 	/**

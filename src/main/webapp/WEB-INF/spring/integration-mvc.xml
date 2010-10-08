@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	<!--controllers are autodetected pojo's annotated with @Controller-->
-	<context:component-scan base-package="org.linkstorage.controller" use-default-filters="false">
+	<context:component-scan base-package="org.linkstorage.web.controller" use-default-filters="false">
 	  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 
@@ -64,7 +64,7 @@
 		</property>
 	</bean>
 
-	<bean id="linkController" class="org.linkstorage.controller.LinkController">
+	<bean id="linkController" class="org.linkstorage.controller.web.LinkController">
 		<property name="jaxb2Marshaller" ref="jaxbMarshaller" />
 	</bean>
 </beans>

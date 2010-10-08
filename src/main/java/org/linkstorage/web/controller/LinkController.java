@@ -1,4 +1,4 @@
-package org.linkstorage.controller;
+package org.linkstorage.web.controller;
 
 import java.io.StringReader;
 import java.util.Date;
@@ -51,6 +51,7 @@ public class LinkController {
 		this.linksRepository = linksRepository;
 	}
 
+	//TODO check for autowire option for all controllers overcoming setting in xml per controller
 	public void setJaxb2Marshaller(Jaxb2Marshaller jaxb2Marshaller) {
 		this.jaxb2Marshaller = jaxb2Marshaller;
 	}

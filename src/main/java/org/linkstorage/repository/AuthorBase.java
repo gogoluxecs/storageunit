@@ -17,7 +17,7 @@ public interface AuthorBase {
 	 *
 	 * @return
 	 */
-	public List getAuthors();
+	public List<Author> getAuthors();
 
 	/**
 	 *

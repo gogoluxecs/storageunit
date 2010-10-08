@@ -10,10 +10,10 @@ public class LinkValidator implements Validator {
     }
 
     public void validate(Object obj, Errors e) {
-        //ValidationUtils.rejectIfEmpty(e, "name", "name.empty");
         Link l = (Link) obj;
-        if (l.getId() != null) {
-        	e.rejectValue("id", "negativevalue");
+        
+        if(l.getId().toString().length() > 0) {
+        	e.rejectValue("id", "notnullvalue");
         }
     }
 }

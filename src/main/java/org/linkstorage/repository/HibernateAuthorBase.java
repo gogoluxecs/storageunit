@@ -28,8 +28,8 @@ public class HibernateAuthorBase implements AuthorBase {
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional
-	public List getAuthors() {
-		return sessionFactory.getCurrentSession().createQuery("from Author a").list();
+	public List<Author> getAuthors() {
+		return (List<Author>) sessionFactory.getCurrentSession().createQuery("from Author a").list();
 	}
 
 	@Override
