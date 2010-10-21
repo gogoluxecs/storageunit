@@ -15,7 +15,7 @@
     <packages>
       <package name="org.linkstorage.model"/>
       <package name="org.linkstorage.repository"/>
-      <package name="org.linkstorage.controller"/>
+      <package name="org.linkstorage.web.controller"/>
     </packages>
   </test>
 
